@@ -55,7 +55,7 @@ body {
   background-color: #007bff;
   color: #ffffff;
   text-align: center;
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 }
 
 .tab:hover {
@@ -164,4 +164,39 @@ header h3 {
     flex-grow: 1;
     margin: 0 5px;
   }
+}
+/* mahendra added: */
+.tooltip-container {
+  cursor: pointer;
+}
+
+.tooltip-box {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 25px;
+  line-height: 1.8;
+  max-width: 1000px;
+  white-space: normal;
+  word-wrap: break-word;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+  z-index: 9999;
+  pointer-events: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(0.9);
+}
+
+.tooltip-box::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
 }
