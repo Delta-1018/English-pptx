@@ -169,6 +169,11 @@ header h3 {
 .tooltip-container {
   cursor: pointer;
 }
+.tooltip-containerQ {
+  font-size: 1.2em;
+  line-height: 1.6;
+  cursor: pointer;
+}
 
 .tooltip-box {
   position: fixed;
@@ -200,3 +205,12 @@ header h3 {
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.85) transparent transparent transparent;
 }
+
+/* Highlight the div when tooltip is shown */
+.highlight {
+  background-color: rgba(255, 223, 0, 0.7); /* Yellow background */
+  border: 2px solid #ffd700; /* Gold border */
+  box-shadow: 0 0 10px rgba(255, 223, 0, 0.7); /* Glowing effect */
+  transition: all 0.3s ease-in-out;
+}
+
